@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grand Way - Inventory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c4cdfa37f2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Grand Way Logo">
+        </div>
+        <nav>
+            <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shopper.html">Shopper</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="filter-bar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products" id="search-input">
+                <button id="search-button">Search</button>
+            </div>
+            <!-- <div class="sort-by">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="default">Default</option>
+                    <option value="price-low-to-high">Price: Low to High</option>
+                    <option value="price-high-to-low">Price: High to Low</option>
+                </select>
+            </div> -->
+            <div>
+                <!-- Dropdown list -->
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="" disabled selected>Select</option>
+                </select>
+
+            <script>
+            // List of Categories
+            const categories = ['Seasonal', 'School Zone', 'Mens Clothing', 'Womens Clothing',
+             'Kids Clothing', 'Accessories', 'Living Room', 'Dining Room', 'Kitchen', 'Bedroom',
+              'Bathroom', 'Patio', 'Furniture', 'Rugs'];
+
+            // Dropdown Element
+            const dropdown = document.getElementById('category');
+
+            // Populate Dropdown
+            categories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.text = category;
+                dropdown.add(option);
+            });
+            </script>
+            </div>
+        </div>
+        <div class="shopping-area">
+            <div class="product-card">
+                <img src="Images/In-Cortina.PNG" alt="Curtain">
+                <h3>Shower Curtains</h3>
+                <p>70 x 72 inches | Red and White</p>
+                <p class="price-card">$22.95</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Br.PNG" alt="Bathroom Set">
+                <h3>Bathroom Set</h3>
+                <p>Description</p>
+                <p class="price-card">$15.32</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Cart.PNG" alt="Beach Cart">
+                <h3>Beach Cart</h3>
+                <p>Description</p>
+                <p class="price-card">$25.99</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Fan.PNG" alt="Fan">
+                <h3>Fan</h3>
+                <p>Description</p>
+                <p class="price-card">$85.00</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Float.PNG" alt="Float">
+                <h3>Pool Float</h3>
+                <p>Description</p>
+                <p class="price-card">$15.99</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Scrub.PNG" alt="Scrub">
+                <h3>Bath Scrub</h3>
+                <p>Description</p>
+                <p class="price-card">$18.99</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Toast.PNG" alt="Waffle Maker">
+                <h3>Waffle Maker</h3>
+                <p>Description</p>
+                <p class="price-card">$23.99</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/In-Vase.PNG" alt="Vases">
+                <h3>Jarras</h3>
+                <p>Description</p>
+                <p class="price-card">$2.33</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-top">
+            <span>&copy; 2023 Grand Way. All rights reserved. All trademarks are property
+                  of their respective owners in the US and other countries.</span>
+            <br>
+            <br>
+            <a id="contact" href="contact.html">
+              Contact Us
+            </a>
+        </div>
+        <div class="foot-2">
+            <a href="https://www.facebook.com/p/Grand-Way-Adjuntas-100084555464497/?locale=es_LA" target="blank">
+              <div class="social">
+                    <i class="fab fa-facebook-square"> </i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com" target="blank">
+                <div class="social">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.tiktok.com/en/" target="blank">
+                <div class="social">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
